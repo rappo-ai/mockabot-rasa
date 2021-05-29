@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  rasa:
+    image: rappoai/rasa
+    volumes:
+      - ./dataset:/app
+    entrypoint: ""
+    command: ["sh", "-c", "rasa train -vv > /app/train_logs.txt && pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 /opt/venv/bin/rasa run -vv --log-file /app/run_logs.txt"]
+    ports:
+    - "5005:5005"
+    - "5678:5678"
