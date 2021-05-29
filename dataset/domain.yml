@@ -1,0 +1,28 @@
+version: "2.0"
+
+intents:
+  - send
+  - reply
+  - replyto
+  - chatid
+  - clearcache
+  - help
+  - tutorial
+  - tutorial_step1
+  - tutorial_step2
+  - tutorial_step3
+  - tutorial_step4
+  - tutorial_step5
+  - tutorial_step6
+  - tutorial_step7
+
+responses:
+  utter_help:
+  - text: "I can help you!"
+
+  utter_tutorial:
+  - text: "Tutorial time!"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

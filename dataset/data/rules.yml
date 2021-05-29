@@ -1,0 +1,13 @@
+version: "2.0"
+
+rules:
+
+- rule: Command /help
+  steps:
+  - intent: help
+  - action: utter_help
+
+- rule: Command /tutorial
+  steps:
+  - intent: tutorial
+  - action: utter_tutorial

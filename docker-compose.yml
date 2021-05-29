@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  rasa:
+    image: rappoai/rasa
+    volumes:
+      - ./dataset:/app
+    entrypoint: ""
+    command: bash -c "rasa train -vv > /app/train_logs.txt && rasa run -vv --log-file /app/run_logs.txt"
+    ports:
+    - "5005:5005"
