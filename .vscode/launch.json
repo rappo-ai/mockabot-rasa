@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Python: Remote Attach",
+      "name": "docker attach",
       "type": "python",
       "request": "attach",
       "connect": {
@@ -19,6 +19,34 @@
           "remoteRoot": "/opt/venv/lib/python3.8/site-packages/rasa"
         }
       ]
+    },
+    {
+      "name": "rasa train",
+      "type": "python",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/dataset",
+      "python": "${workspaceFolder:rasa}/../.venv/bin/python",
+      "program": "${workspaceFolder:rasa}/../.venv/bin/rasa",
+      "args": [
+        "train",
+        "-vv"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+    },
+    {
+      "name": "rasa run",
+      "type": "python",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/dataset",
+      "python": "${workspaceFolder:rasa}/../.venv/bin/python",
+      "program": "${workspaceFolder:rasa}/../.venv/bin/rasa",
+      "args": [
+        "run",
+        "-vv"
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": false,
     }
   ]
 }
