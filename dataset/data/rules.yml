@@ -7,7 +7,37 @@ rules:
   - intent: help
   - action: utter_help
 
-- rule: Command /tutorial
+- rule: Command /tutorial_step1
   steps:
-  - intent: tutorial
-  - action: utter_tutorial
+  - intent: tutorial_step1
+  - action: utter_tutorial_step1
+
+- rule: Command /tutorial_step2
+  steps:
+  - intent: tutorial_step2
+  - action: utter_tutorial_step2
+
+- rule: Command /tutorial_step3
+  steps:
+  - intent: tutorial_step3
+  - action: utter_tutorial_step3
+
+- rule: Command /tutorial_step4
+  steps:
+  - intent: tutorial_step4
+  - action: utter_tutorial_step4
+
+- rule: Command /tutorial_step5
+  steps:
+  - intent: tutorial_step5
+  - action: utter_tutorial_step5
+
+- rule: Command /tutorial_step6
+  steps:
+  - intent: tutorial_step6
+  - action: utter_tutorial_step6
+
+- rule: Command /tutorial_step7
+  steps:
+  - intent: tutorial_step7
+  - action: utter_tutorial_step7

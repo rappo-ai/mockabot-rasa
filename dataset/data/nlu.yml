@@ -1,45 +1,59 @@
 version: "2.0"
 
 nlu:
-- intent: send
-  metadata:
-    is_command: true
-- intent: reply
-  metadata:
-    is_command: true
-- intent: replyto
-  metadata:
-    is_command: true
-- intent: chatid
-  metadata:
-    is_command: true
-- intent: clearcache
-  metadata:
-    is_command: true
 - intent: help
   metadata:
-    is_command: true
-- intent: tutorial
-  metadata:
-    is_command: true
+    keyword_intent: true
+    match_condition: "start"
+  examples: |
+    - /help
+
 - intent: tutorial_step1
   metadata:
-    is_command: true
+    keyword_intent: true
+    match_condition: "start"
+  examples: |
+    - /tutorial
+    - /tutorial_step1
+
 - intent: tutorial_step2
   metadata:
-    is_command: true
+    keyword_intent: true
+    match_condition: "start"
+  examples: |
+    - /tutorial_step2
+
 - intent: tutorial_step3
   metadata:
-    is_command: true
+    keyword_intent: true
+    match_condition: "start"
+  examples: |
+    - /tutorial_step3
+
 - intent: tutorial_step4
   metadata:
-    is_command: true
+    keyword_intent: true
+    match_condition: "start"
+  examples: |
+    - /tutorial_step4
+
 - intent: tutorial_step5
   metadata:
-    is_command: true
+    keyword_intent: true
+    match_condition: "start"
+  examples: |
+    - /tutorial_step5
+
 - intent: tutorial_step6
   metadata:
-    is_command: true
+    keyword_intent: true
+    match_condition: "start"
+  examples: |
+    - /tutorial_step6
+
 - intent: tutorial_step7
   metadata:
-    is_command: true
+    keyword_intent: true
+    match_condition: "start"
+  examples: |
+    - /tutorial_step7
