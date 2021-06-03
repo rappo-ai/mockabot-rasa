@@ -1,6 +1,11 @@
 version: "2.0"
 
 intents:
+  - send
+  - reply
+  - replyto
+  - chatid
+  - clearcache
   - help
   - tutorial_step1
   - tutorial_step2
@@ -9,6 +14,13 @@ intents:
   - tutorial_step5
   - tutorial_step6
   - tutorial_step7
+
+actions:
+  - action_send
+  - action_reply
+  - action_replyto
+  - action_chatid
+  - action_clearcache
 
 session_config:
   session_expiration_time: 60

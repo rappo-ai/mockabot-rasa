@@ -1,6 +1,42 @@
 version: "2.0"
 
 nlu:
+
+- intent: send
+  metadata:
+    keyword_intent: true
+    match_condition: "start"
+  examples: |
+    - /send
+
+- intent: reply
+  metadata:
+    keyword_intent: true
+    match_condition: "start"
+  examples: |
+    - /reply
+
+- intent: replyto
+  metadata:
+    keyword_intent: true
+    match_condition: "start"
+  examples: |
+    - /replyto
+
+- intent: chatid
+  metadata:
+    keyword_intent: true
+    match_condition: "start"
+  examples: |
+    - /chatid
+
+- intent: clearcache
+  metadata:
+    keyword_intent: true
+    match_condition: "start"
+  examples: |
+    - /clearcache
+
 - intent: help
   metadata:
     keyword_intent: true
