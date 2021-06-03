@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../rasa/rasa"
+		}
+	],
+	"settings": {
+		"python.pythonPath": "~/Documents/code/rappo-ai/rasa/.venv/bin/python"
+	}
+}
