@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "docker attach",
+      "name": "docker attach rasa run",
       "type": "python",
       "request": "attach",
       "connect": {
@@ -15,7 +15,23 @@
       "justMyCode": false,
       "pathMappings": [
         {
-          "localRoot": "${workspaceFolder:rasa}/rasa",
+          "localRoot": "${workspaceFolder:rasa}",
+          "remoteRoot": "/opt/venv/lib/python3.8/site-packages/rasa"
+        }
+      ]
+    },
+    {
+      "name": "docker attach rasa run actions",
+      "type": "python",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5679
+      },
+      "justMyCode": false,
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder:rasa}",
           "remoteRoot": "/opt/venv/lib/python3.8/site-packages/rasa"
         }
       ]
