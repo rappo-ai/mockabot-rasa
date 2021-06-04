@@ -20,13 +20,21 @@ docker-compose up
 
 ### Launch and Attach (supports debugging)
 
-1.  ### First build and run the debug Docker image
+You will need VS Code with Python extension installed. (https://code.visualstudio.com/download)
+
+1.  #### Sync Rasa source code
+    ```bash
+    git clone https://github.com/rappo-ai/rasa.git
+    ```
+    Make sure you sync rasa repository as a sibling folder to mockabot-rasa repository.
+
+1.  #### Build and run the debug Docker image
     ```bash
     docker-compose -f docker-compose.debug.yml up --build
     ```
 
-2.  ### Attach to Rasa SDK server (actions server)
+1.  #### Attach to Rasa SDK server (actions server)
     In VSCode 'Run and Debug' tab, select 'docker attach rasa run actions' and click Start Debugging.
 
-3.  ### Attach to Rasa open-source server (core/nlu server)
+1.  #### Attach to Rasa open-source server (core/nlu server)
     In VSCode 'Run and Debug' tab, select 'docker attach rasa run' and click Start Debugging.
