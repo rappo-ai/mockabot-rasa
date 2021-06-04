@@ -12,7 +12,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-from utils.json import get_json_key
+from actions.utils.json import get_json_key
 
 class ActionChatID(Action):
 
